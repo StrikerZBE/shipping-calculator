@@ -51,9 +51,11 @@ h1 {
 .form-group input{
     height: 3.5rem;
     width: 100%; /*Ocupan todo el espacio posible. Los de la siguiente fila ocupan 100% de cada fila. Eso creo xd*/
+    font-size: 2.5rem;
     border: 1px solid var(--primary-color);
     border-radius: 5px;
     margin-top: 5px;
+    padding: 2.5rem 0;
 }
 .calc-item{
     display: block;
@@ -81,23 +83,30 @@ h1 {
 /* SECTION */
 .results{
     display: grid;
-    grid-template-rows: repeat(4,1fr);
-    grid-gap: 10px;
+    justify-content: center;
 }
 .result-item{
     display: flex;
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--light-letter-color);
-}
-.result-title{
-    font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .icon{
     height: 60px;
     margin-right: 20px;
 }
-.icon-title{
-    height: 80px;
+.result-title blockquote::before{
+    content: '';
+    background-image: url(/images/caja.svg);
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    left: -1rem;
+}
+.result-title{
+    position: relative;
+    padding-left: 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
