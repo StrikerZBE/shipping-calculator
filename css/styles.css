@@ -20,3 +20,19 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
+/* HEADER */
+
+.logo{
+    display: block;
+    margin: 4rem auto .2rem auto;
+    min-width: 15rem;
+    width: 25rem;
+}
+
+h1{
+    font-size: 3.4rem;
+    text-align: center;
+    margin-top: 0;
+    color: var(--light-letter-color);
+}
