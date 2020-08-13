@@ -93,21 +93,14 @@ h1 {
     margin-bottom: 5px;
     align-items: center;
 }
+.result-title{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
 .icon{
     height: 50px;
     margin-right: 20px;
 }
-.result-title blockquote::before{
-    content: '';
-    background-image: url(/images/caja.svg);
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    left: -1rem;
-}
-.result-title{
-    position: relative;
-    padding-left: 3rem;
-    font-size: 1.8rem;
-    font-weight: 600;
+.icon-title{
+    height: 80px;
 }
