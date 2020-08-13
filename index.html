@@ -13,20 +13,31 @@
             <img src="/images/amazon.svg" alt="" class="logo">
             <h1>Calculadora de envios</h1>
         </header>
-        <main class="principal-container">
+        <main class="main-content">
             <form class="form-calculator">
-                <label for="peso">Peso(libras)</label>
-                <input type="number" id="peso">
-                <label for="largo">Largo</label>
-                <input type="number" id="largo">
-                <label for="ancho">Ancho</label>
-                <input type="number" id="ancho">
-                <label for="alto">Alto</label>
-                <input type="number" id="alto">
+                <div class="form-group">
+                    <label for="peso" class="calc-item">Peso(libras)</label>
+                    <input type="number" id="peso">
+                </div>
+                <div class="calc-features">
+                    <div class="form-group">
+                        <label for="largo" class="calc-item">Largo</label>
+                        <input type="number" id="largo">
+                    </div>
+                    <div class="form-group">
+                        <label for="ancho" class="calc-item">Ancho</label>
+                        <input type="number" id="ancho">
+                    </div>
+                    <div class="form-group">
+                        <label for="alto" class="calc-item">Alto</label>
+                        <input type="number" id="alto">
+                    </div>
+                </div>
+                <input type="submit" value="Calcular" class="calc-buttom">
             </form>
             <section class="results">
-                <div class="result-item">
-                    <img src="/images/caja.svg" alt="" class="icon">
+                <div class="result-title result-item">
+                    <img src="/images/caja.svg" alt="" class="icon icon-title">
                     <p>Costos estimados</p>
                 </div>
                 <div class="result-item">

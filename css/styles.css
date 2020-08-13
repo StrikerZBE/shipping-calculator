@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
@@ -23,16 +27,77 @@ body {
 
 /* HEADER */
 
-.logo{
+.logo {
     display: block;
     margin: 4rem auto .2rem auto;
     min-width: 15rem;
     width: 25rem;
 }
 
-h1{
+h1 {
     font-size: 3.4rem;
     text-align: center;
     margin-top: 0;
+    margin-bottom: 8rem;
     color: var(--light-letter-color);
+}
+
+/* MAIN */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 8rem;
+}
+.form-group input{
+    height: 3.5rem;
+    width: 100%; /*Ocupan todo el espacio posible. Los de la siguiente fila ocupan 100% de cada fila. Eso creo xd*/
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.calc-item{
+    display: block;
+    color: var(--light-letter-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.calc-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2.2rem;
+}
+.calc-buttom{
+    background-color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    color: var(--background-color);
+}
+
+/* SECTION */
+.results{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.result-item{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--light-letter-color);
+}
+.result-title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.icon{
+    height: 60px;
+    margin-right: 20px;
+}
+.icon-title{
+    height: 80px;
 }
