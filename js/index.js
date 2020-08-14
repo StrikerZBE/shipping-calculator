@@ -1,8 +1,3 @@
-/* VARIABLES */
-let peso;
-let largo;
-let ancho;
-let alto;
 /* EVENTOS */
 
 
