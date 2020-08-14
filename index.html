@@ -14,23 +14,23 @@
             <h1>Calculadora de envios</h1>
         </header>
         <main class="main-content">
-            <form class="form-calculator">
+            <form class="form-calculator" id="requestCalc">
                 <div class="form-group">
                     <label for="peso" class="calc-item">Peso(libras)</label>
-                    <input type="number" id="peso">
+                    <input type="number" name="peso">
                 </div>
                 <div class="calc-features">
                     <div class="form-group">
                         <label for="largo" class="calc-item">Largo</label>
-                        <input type="number" id="largo">
+                        <input type="number" name="largo">
                     </div>
                     <div class="form-group">
                         <label for="ancho" class="calc-item">Ancho</label>
-                        <input type="number" id="ancho">
+                        <input type="number" name="ancho">
                     </div>
                     <div class="form-group">
                         <label for="alto" class="calc-item">Alto</label>
-                        <input type="number" id="alto">
+                        <input type="number" name="alto">
                     </div>
                 </div>
                 <input type="submit" value="Calcular" class="calc-buttom">
@@ -42,15 +42,15 @@
                 </div>
                 <div class="result-item">
                     <img src="/images/libra.svg" alt="" class="icon">
-                    <p>Peso final: <span>?</span></p>
+                    <p>Peso final: <span class="final-result">?</span></p>
                 </div>
                 <div class="result-item">
                     <img src="/images/avion.svg" alt="" class="icon">
-                    <p>Envio aereo: <span>?</span></p>
+                    <p>Envio aereo: <span class="aerial-result">?</span></p>
                 </div>
                 <div class="result-item">
                     <img src="/images/embarcacion.svg" alt="" class="icon">
-                    <p>Envio marítimo: <span>?</span></p>
+                    <p>Envio marítimo: <span class="maritime-result">?</span></p>
                 </div>
             </section>
         </main>
